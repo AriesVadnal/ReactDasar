@@ -1,12 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
+import Home from './container/Home/Home';
+// import {createStore} from 'redux';
+// import {Provider} from 'react-redux';
+// import rootReducer from './redux/reducer/globalReducer';
+
+// store
+// const storeRedux = createStore(rootReducer);
+
+
+
+// ReactDOM.render(
+//   <React.StrictMode> 
+//     <Provider store={storeRedux}>
+//       <Home/>
+//     </Provider>
+//   </React.StrictMode>,
+//   document.getElementById('root')
+// );
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+      <Home/>
   </React.StrictMode>,
   document.getElementById('root')
 );
